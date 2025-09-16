@@ -33,3 +33,15 @@ sample estimates:
        cor 
 -0.8676594 
 
+res2 <-cor.test(my_data$wt, my_data$mpg, method = "spearman")
+res2
+
+        Spearman's rank correlation rho
+
+data:  my_data$wt and my_data$mpg
+S = 10292, p-value = 1.488e-11
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+      rho 
+-0.886422 
+

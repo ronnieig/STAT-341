@@ -15,6 +15,9 @@ head(df)
 
 glimpse(df)
 
+#Loaded this library to run ggplot function
+library(ggplot22)
+
 #Plot the dataset
 ggplot(df, aes(x = poison, y = time, fill = poison)) + geom_boxplot() + geom_jitter(shape = 15, color = "steelblue", position = position_jitter(0.21)) + theme_classic()
 
